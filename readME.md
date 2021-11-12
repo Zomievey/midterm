@@ -1,7 +1,7 @@
 1. Where is the most appropriate place to nest a script tag in an HTML file?
 
 a. Nested inside the head section, at the very bottom.
-b. Nested inside the body tag, at the very bottom.
+--->>b. Nested inside the body tag, at the very bottom.
 c. Nested inside the body tag, at the very top.
 d. It doesn't matter where the script tag is placed.
 
@@ -19,11 +19,17 @@ OR
     <div>
         <nav>This is the nav element></nav>
     </div>
-</body>        
----
+</body>
+
+## Answer: the first option is correct because it used the correct <nav> tag used to create a navbar.
+
 3.In CSS, what is the difference between "em"s and "rem"s?
 
----
+Answer: ems are font sizes in relation to the parent, so if you you had a parent of 1em (16px) and a child 2em, the font size of would be 32px inside of the nested element, they also compound as you nest.
+
+rem is sizes fonts by the root em ( html element), so the font size will be consistent throughout .
+
+## ems and rems can be used in padding and margin as well and will base off the parent font size or the root font size and can be used to scale and space elements properly
 
 4.What is the most specific CSS selector for the following HTML snippet?
 
@@ -33,12 +39,17 @@ OR
 
 a. div {}
 b. section > div {}
-c. .main > .container {}
+---->c. .main > .container {}
 d. .container {}
 
 ---
 
 5. In one sentence, describe at least one way to center items in a div, using flexbox.
+   div {
+   display: flex;
+   align-items: center;
+   justify-content: center
+   }
 
 ---
 
@@ -51,7 +62,7 @@ a. <div class="container">
 
 .container>.row.col
 
-b. <div class="container">
+---->b. <div class="container">
 
 <div class="row'>
 <div class="col-6"></div>
@@ -82,13 +93,13 @@ a. logs the array to the developer console each time the loop runs
 
 b. logs the string "hello world" to the console
 
-c. logs the value of the current array index to the developer console
+---->c. logs the value of the current array index to the developer console
 
 ---
 
 8. Briefly describe the different behaviors when using var, let, and const to declare variables in JavaScript.
 
----
+## Answer: 1) var: hoisted (always declared at top of scope, global if none) - function scope 2) let: block scope - not re-declarable 3) const: block scope - not re-assignable - not re-declarable ; helps the JS engines compiler to decide on what to optimize.
 
 9. This code snippet demonstrates ES6 syntax in JavaScript. What would the variable "results" equal?
 
@@ -97,7 +108,7 @@ let results = multiplyArr([1, 2, 3], 2);
 console.log(results);
 
 a. [1,2,3]
-b. [2,4,6]
+--->b. [2,4,6]
 c. undefined
 d. "results"
 
@@ -113,7 +124,7 @@ do {
 sleep +- 'Z';
 } while (i++ <amount);
 
-a. "ZZZZZZZZZZ"
+---->a. "ZZZZZZZZZZ"
 b. ""
 c. 10
 d. 0
@@ -134,20 +145,20 @@ console.log('Please select an option you can afford');
 a. Successfully ordered pizza!
 b. Successfully ordered a hamburger!
 c. Successfully ordered a taco!
-d. Please select an option you can afford.
+---->d. Please select an option you can afford.
 
 ---
 
 12. What is the Document Object Model?
 
-a. programming interface for HTML Documents
+--->a. programming interface for HTML Documents
 b. CSS framework
 c. JavaScript framework for building applications
 d. VS Code extension
 
 ---
 
-13. Briefly describe what this code bloack does.
+13. Briefly describe what this code block does.
 
 window.addEventListener("DOMContentLoaded", function() {
 let div = document.createElement("div");
@@ -155,7 +166,7 @@ div.className = "container";
 document.body.appenChild(div);
 });
 
----
+## Answer: waiting for page to load, fires
 
 14. Briefly describe what this code block does.
 
@@ -172,7 +183,7 @@ $(this).remove();
 16. Why does this function use the "return" instead of console.logging?
 
 function square(x) {
-return x * y;
+return x \* y;
 }
 
 ---
@@ -190,7 +201,7 @@ console.log(
 
 const greeter = sayHello.bind({ name: 'John' });
 
-a. Binding the context of "this" to the object passed to the bind method.
+---->a. Binding the context of "this" to the object passed to the bind method.
 b. Edits the name variable passed to the original sayHello function.
 c. Creating an object called name and adding a property called name with a value of "John".
 
@@ -213,10 +224,14 @@ let myFunc = makeFunc();
 
 myFunc();
 
----
+## Answer:
 
-20. In one or two sentences, define Object Oriented Programming
+20. In one or two sentences, define Object Oriented Programming:
 
----
+## Answer:
 
-21. There will be 3 to 5 questions here that you will code yourself and paste the answers here. Please practice basic JavaScript (level 7 and 8) on codewars.com so you are prepared to solve these problems. You are welcome to ask for help in the co-working space when working on codewars problems!
+21. Describe inheritance in Object Oriented Programming?
+
+## Answer:
+
+22. There will be 3 to 5 questions here that you will code yourself and paste the answers here. Please practice basic JavaScript (level 7 and 8) on codewars.com so you are prepared to solve these problems. You are welcome to ask for help in the co-working space when working on codewars problems!
