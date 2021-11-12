@@ -25,11 +25,11 @@ OR
 
 3.In CSS, what is the difference between "em"s and "rem"s?
 
-Answer: ems are font sizes in relation to the parent, so if you you had a parent of 1em (16px) and a child 2em, the font size of would be 32px inside of the nested element, they also compound as you nest.
+## Answer: ems are font sizes in relation to the parent, so if you you had a parent of 1em (16px) and a child 2em, the font size of would be 32px inside of the nested element, they also compound as you nest.
 
-rem is sizes fonts by the root em ( html element), so the font size will be consistent throughout .
+## rem is sizes fonts by the root em ( html element), so the font size will be consistent throughout .
 
-## ems and rems can be used in padding and margin as well and will base off the parent font size or the root font size and can be used to scale and space elements properly
+## also, ems and rems can be used in padding and margin as well and will base off the parent font size or the root font size and can be used to scale and space elements properly
 
 4.What is the most specific CSS selector for the following HTML snippet?
 
@@ -166,7 +166,7 @@ div.className = "container";
 document.body.appenChild(div);
 });
 
-## Answer: waiting for page to load, fires
+## Answer: when the page loads, it creates a div with the class name "container" and appends it to the body
 
 14. Briefly describe what this code block does.
 
@@ -174,9 +174,13 @@ $('.demo').click(function () {
 $(this).remove();
 });
 
+## Answer: Select something with the class of demo, and adds a click event listener to it, and when the element is clicked it removes the element
+
 ---
 
 15. Describe the concept of hoisting in JavaScript. Specifically how it applies when using var, let, and const, also in functions.
+
+## Answer: A variable can be used before it been declared with Var, Arrow functions don't get hoisted, Let and Const do not get hoisted
 
 ---
 
@@ -186,9 +190,13 @@ function square(x) {
 return x \* y;
 }
 
+## Answer: Return takes the value and returns it to the place where the function was called, console.log only logs it to the debugging terminal
+
 ---
 
 17. In two or three sentences, describe the concept of scope in JavaScript
+
+## Answer: The context of the is local and global, and determines by the code block {}
 
 ---
 
@@ -224,14 +232,14 @@ let myFunc = makeFunc();
 
 myFunc();
 
-## Answer:
+## Answer: The name variable will be available at the block scope of the function makeFunc
 
 20. In one or two sentences, define Object Oriented Programming:
 
-## Answer:
+## Answer: style of programming characterized by the identification of classes of objects, closely linked with the methods in which they are associated.
 
 21. Describe inheritance in Object Oriented Programming?
 
-## Answer:
+## Answer: extending one class off of another, and can pass properties from the parent class to the child class.
 
 22. There will be 3 to 5 questions here that you will code yourself and paste the answers here. Please practice basic JavaScript (level 7 and 8) on codewars.com so you are prepared to solve these problems. You are welcome to ask for help in the co-working space when working on codewars problems!
